@@ -1,1 +1,62 @@
 @import "tailwindcss";
+
+/* Mobile */
+@media (max-width: 500px) {
+
+
+	.header-section {
+		@apply flex flex-col m-3 ;
+	}
+
+	.portrait {
+		@apply flex justify-center ;
+	}
+	.portrait {
+		@apply scale-100 object-contain;
+	}
+
+	.about-section {
+		@apply items-center p-5 mt-5;
+	}
+
+	.about-section > nav {
+		@apply self-center;
+	}
+
+
+	.my-project {
+		text-align: center;
+		margin-top: 10rem;
+	}
+
+	.projects-container {
+		@apply grid grid-cols-1 m-5;
+	}
+
+	footer {
+		@apply flex flex-col m-5 mt-30;
+	}
+
+	footer > section > h2 {
+		text-align: center;
+	}
+
+
+}
+
+/* Tablet */
+@media (min-width: 500px) and (max-width: 1000px ) {
+
+	.projects-container {
+		@apply grid grid-cols-2;
+	}
+
+}
+
+/* Destop */
+/* @media  { */
+/* body { */
+/* 	background-color:greenyellow; */
+/* }	 */
+/* 	 */
+/* } */
