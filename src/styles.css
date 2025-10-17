@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
 /* Mobile */
-@media (max-width: 500px) {
+@media (max-width:500px) {
 
 
 	.header-section {
-		@apply flex flex-col m-3 ;
+		@apply flex flex-col m-3;
 	}
 
 	.portrait {
-		@apply flex justify-center ;
+		@apply flex justify-center;
 	}
+
 	.portrait {
 		@apply scale-100 object-contain;
 	}
@@ -19,7 +20,7 @@
 		@apply items-center p-5 mt-5;
 	}
 
-	.about-section > nav {
+	.about-section>nav {
 		@apply self-center;
 	}
 
@@ -37,7 +38,7 @@
 		@apply flex flex-col m-5 mt-30;
 	}
 
-	footer > section > h2 {
+	footer>section>h2 {
 		text-align: center;
 	}
 
@@ -45,18 +46,39 @@
 }
 
 /* Tablet */
-@media (min-width: 500px) and (max-width: 1000px ) {
+@media (min-width: 500px) and (max-width: 1000px) {
 
 	.projects-container {
 		@apply grid grid-cols-2;
 	}
 
+	body {
+		@apply m-5;
+	}
+
+	.my-project {
+		@apply mb-5 text-3xl;
+	}
+
+	.header-section {
+		@apply flex-col;
+	}
+
+	.portrait {
+		@apply left-0 top-0 z-11;
+	}
+
+	.about-section {
+		@apply max-w-full items-center;
+	}
+
+
+
 }
 
-/* Destop */
-/* @media  { */
-/* body { */
-/* 	background-color:greenyellow; */
-/* }	 */
-/* 	 */
-/* } */
+@media (min-width:1000px) {
+	body {
+		@apply m-10;
+	}
+
+}
